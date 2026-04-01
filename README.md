@@ -8,30 +8,50 @@
 | 指導教授 | 張珀銀 助理教授 |
 | 實驗室 | 海事 AI 實驗室（Maritime AI Lab） |
 | 專題期間 | 113-2 學期 ~ 114-2 學期 |
-| 本 Repo 用途 | 進度追蹤、共用資源、培訓補強 |
+| 本 Repo 用途 | 培訓教材、進度追蹤、共用資源 |
 
 ## 使用方式
 
-本 Repo 採用 **Fork + PR** 流程：
+本 Repo 採用 **Fork + PR** 流程，和課程作業繳交方式相同：
 
 1. **Fork** 本 Repo 到你的 GitHub 帳號
 2. 在你的 Fork 中建立 `members/你的學號/` 資料夾
-3. 每月進度報告 → 發 PR 回主 Repo
-4. 老師審閱 PR → 合併或回饋
+3. 完成培訓任務 → 放在你的 Fork
+4. 每月進度報告 → 發 PR 回主 Repo
+5. 老師審閱 PR → 合併或回饋
 
 ## 成員
 
-| 姓名 | 學號 | 督導 | 專題方向 | 備註 |
-|------|------|------|---------|------|
+| 姓名 | 學號 | 督導 | 角色 | 備註 |
+|------|------|------|------|------|
 | | | | | 待 PY 填入 |
 
-## 現況
+## 培訓時程
 
-112 屆專題生已在進行中，本 Repo 追補建立。重點：
+### 第一階段：基礎能力（4 月）
 
-1. **進度追蹤**：每月進度報告（PR 繳交）
-2. **培訓補強**：如有基礎能力缺口，可參考 `training/` 教材自主補強
-3. **共用資源**：論文清單、工具連結
+| 週 | 培訓項目 | 教材 | 繳交 |
+|----|---------|------|------|
+| W1 | Git/GitHub 協作 | training/git-basics.md | members/學號/git-exercise.md |
+| W2 | Linux 基礎 + WSL | training/linux-basics.md | members/學號/linux-exercise.md |
+| W3 | Python + Pandas 入門 | training/python-basics.md | members/學號/python-exercise.md |
+| W4 | 論文閱讀方法 | training/paper-reading.md | members/學號/paper-summary.md |
+
+### 第二階段：計畫導入（5 月）
+
+| 週 | 培訓項目 | 教材 | 繳交 |
+|----|---------|------|------|
+| W5 | 實驗室工具鏈（Docker + GPU） | training/lab-tools.md | members/學號/lab-setup.md |
+| W6 | 依計畫分流：跟做模式啟動 | — | members/學號/weekly-log.md |
+| W7 | 跟做 + 碩士生帶做 | — | members/學號/weekly-log.md |
+| W8 | 跟做 + 碩士生帶做 | — | members/學號/weekly-log.md |
+
+### 第三階段：獨立運作（6-7 月）
+
+| 週 | 目標 | 繳交 |
+|----|------|------|
+| W9-W12 | 碩士生口試後，開始獨立操作 | members/學號/weekly-log.md |
+| W13+ | 暑假：獨立跑實驗、處理行政 | progress/月份-進度報告.md (PR) |
 
 ## 進度報告
 
@@ -46,35 +66,21 @@ progress/
 
 格式見 `progress/template.md`。
 
-## 培訓教材（自主補強用）
-
-如果覺得某方面基礎不夠，可以自行參考以下教材練習：
-
-| 主題 | 教材位置 | 說明 |
-|------|---------|------|
-| Git/GitHub | training/git-basics.md | 版本控制和協作 |
-| Linux | training/linux-basics.md | 指令操作和權限 |
-| Python + Pandas | training/python-basics.md | 資料分析基礎 |
-| 論文閱讀 | training/paper-reading.md | 怎麼讀一篇論文 |
-| 實驗室工具 | training/lab-tools.md | SSH、Docker、GPU |
-
-培訓教材不要求繳交，但建議趁暑假前把不熟的部分補起來。
-
 ## 評量方式
 
 | 項目 | 比例 | 說明 |
 |------|------|------|
-| 專題進度 | 40% | 是否按計畫推進 |
+| 培訓完成度 | 30% | 第一階段 4 項培訓是否全部完成 |
 | 每月進度報告 | 20% | 是否按時繳交、內容品質 |
-| 態度與出席 | 20% | 週會出席、主動性 |
-| 成果展示 | 20% | 期末發表品質 |
+| 計畫參與度 | 30% | 跟做表現、獨立操作能力 |
+| 態度與出席 | 20% | 週會出席、主動性、團隊合作 |
 
 ## Repo 結構
 
 ```
 edu-capstone-112/
 ├── README.md              ← 本檔案
-├── training/              ← 培訓教材（自主補強用）
+├── training/              ← 培訓教材
 │   ├── git-basics.md
 │   ├── linux-basics.md
 │   ├── python-basics.md
@@ -87,5 +93,10 @@ edu-capstone-112/
 └── members/               ← 學生個人資料夾（Fork 後建立）
     └── （學號）/
         ├── profile.md
+        ├── git-exercise.md
+        ├── linux-exercise.md
+        ├── python-exercise.md
+        ├── paper-summary.md
+        ├── lab-setup.md
         └── weekly-log.md
 ```
